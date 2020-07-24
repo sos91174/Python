@@ -1,0 +1,35 @@
+#9
+M1=["三民主義，吾黨所宗；以建民國，以進大同。","咨爾多士，為民前鋒；夙夜匪懈，主義是從。","矢勤矢勇，必信必忠；一心一德，貫徹始終。"]
+
+for i in range(3):
+    print(M1[i])
+
+#10
+myList = ['五光十色','八九不離十','十全十美', '一石二鳥','三番兩次']
+ 
+myList.sort()
+ 
+print(myList)
+
+#11
+
+li=["白 日 依 山 盡 ","黃 河 入 海 流 " ,"欲 窮 千 里 目" , "更 上 一 層 樓"]
+print(li)
+
+
+for x in li:
+    print(x.center(80))
+    
+#12跟電腦比大小
+import random
+import time
+self = random.randint(1,6)
+print(“你骰到的數字為”+str(self))
+com = random.randint(1,6)
+print(“電腦骰到的數字為”+str(com))
+if self > com:
+print(“你贏了電腦”)
+elif self == com:
+print(“不錯喔 和局”)
+elif self < com:
+print(“你輸給了電腦”)
