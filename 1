@@ -1,0 +1,40 @@
+#1.輸入跟回報
+x=int(input("請輸入今天日期(日)"))
+if x % 2 == 0:
+ print("今天是雙數日，身分證尾數[雙號]的人可以買口罩")
+else:
+ print("今天是單數日，身分證尾數[單號]的人可以買口罩")
+
+
+#2. .format做出一個介紹(要用變數帶進去)
+print("今天是西元{0:d}年{1:2d}月{2:2d}號".format(2020,4,29))
+
+
+#3. 溫度變換器
+usd=30
+ch=int(input("你想換多少美金?"))
+total=str(ch * usd)
+print("那你要給我"+total+"台幣")
+
+
+
+#4. 幫媽媽買豬肉  !!!買黃金
+goldPrice=999
+g=int(input("你想要買多少公克的黃金送我呢?"))
+total = str(g*goldPrice)
+print("那總共要"+total+"台幣")
+
+
+
+
+#5.判斷式   !!!判斷天氣
+tem=int(input("請輸入今天溫度:"))
+
+if tem >=30:
+ print("今天天氣快把我熱死了 我需要吃永康街的芒果雪花冰")
+   
+elif tem>15 and tem<30:
+ print("今天天氣剛剛好 很適合出外旅遊")
+
+else:
+ print("這天氣冷死了 我想喝星巴克的熱拿鐵")
