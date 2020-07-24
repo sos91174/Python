@@ -1,0 +1,58 @@
+#6
+import random as r
+
+while True:
+    inkey = input("按任意建再按[ENTER]鍵擲骰子:")
+    if len(inkey)>0:
+        num = r.randint(1,6)
+        print("你擲的骰子點數為:" + str(num))
+    else:
+        print("遊戲結束!")
+        break
+
+#7
+age = int(input("請輸入您的年紀:"))
+
+if age >= 18:
+    print("你可以看所有電影")
+    
+elif age >=12 and age <18:
+    print("你可以看輔導級,保護級,普遍級電影")
+
+elif age >=6 and age <12:
+    print("你可以看輔導級,保護級電影")
+else:
+     print("小朋友，你只能看普遍級電影")
+
+#8星座命盤解析 
+Constellation ={"牡羊座":"有高度的容忍性。","金牛座":"個性溫和又堅實，性情沈著而踏實。","雙子座":"個性敏銳又快捷。",
+                "巨蟹座":"怠情豐富，對事物的怠受性強。","獅子座":"為人正直，頗具威嚴。","處女座":"為人勤勉，一絲不苟，喜歡接觸社會。",
+                "天秤座":"個性穩健而理智。","天蠍座":"個性強烈衝動。","射手座":"個性率直而開朗，對正義和真理抱持著極高的期許。"
+                ,"魔羯座":"充滿智慧，思緒周密。","水瓶座":"個性獨立而執著。","雙魚座":"才華洋溢，喜歡幻想。"}
+
+Con = input("請輸入你想查詢的星座:")
+                
+if Con == "牡羊座":
+    print(Constellation["牡羊座"])
+elif Con == "金牛座":
+    print(Constellation["金牛座"])
+elif Con == "雙子座":
+    print(Constellation["雙子座"])
+elif Con == "巨蟹座":
+    print(Constellation["巨蟹座"])
+elif Con == "獅子座":
+    print(Constellation["獅子座"])
+elif Con == "處女座":
+    print(Constellation["處女座"])
+elif Con == "天秤座":
+    print(Constellation["天秤座"])
+elif Con == "天蠍座":
+    print(Constellation["天蠍座"])
+elif Con == "射手座":
+    print(Constellation["射手座"])
+elif Con == "魔羯座":
+    print(Constellation["魔羯座"])
+elif Con == "水瓶座":
+    print(Constellation["水瓶座"])
+elif Con == "雙魚座":
+    print(Constellation["雙魚座"])
